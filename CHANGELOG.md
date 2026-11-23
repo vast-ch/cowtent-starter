@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.2.3 - 2026-11-23
+
+- **Bella's photos are on her map**: her gallery's photos have GPS along
+  her route, so her post shows the photos on the map by themselves.
+
 ## v0.2.2 - 2026-11-23
 
 - **Places and photos on the map** in 02 Writing your blog: a point's
