@@ -154,6 +154,27 @@ Without the `!` it's just a link to download the file:
 
 The words in the square brackets are the map's name, and are read out to people who can't see it.
 
+### Places on the map
+
+The `points` of a post's `facts:` (see [Filters](#filters)) get a dot on the map when you give them a `latitude` and `longitude`. Hover a dot and it shows the point's name and altitude:
+
+```yaml title="posts/2025-06-01-my-first-trip/index.md"
+facts:
+  points:
+    - name: The Bussalp
+      altitude: 1790
+      latitude: 46.65099
+      longitude: 7.99203
+```
+
+To find them, right-click the place on [Google Maps](https://maps.google.com): the first line it shows, like `46.65099, 7.99203`, is the latitude and the longitude. On [map.geo.admin.ch](https://map.geo.admin.ch) they are the line next to **WGS 84**. A point without them is still in the table, just not on the map. A place you pass twice only needs them the first time.
+
+### Photos on the map
+
+There's nothing to write for these. Phones and many cameras save where a photo was taken inside the photo itself (its GPS, in the EXIF). Every photo in the post's `gallery` folder that has it appears on the map as a small round photo where it was taken, and a click on it opens it in the gallery.
+
+Your photos don't show up on the map? The GPS was taken out on the way: some apps remove it when they export or resize a photo (Apple Photos: in the export, turn on **Include location information**). The photos on your blog never have it, only the ones you upload: the blog makes its own copies of them without it. Mind that the ones you upload are in your blog's repository, which anyone can see.
+
 ## Tags
 
 Tags are short words you give your posts, like `hiking` or `winter`. They're listed in the sidebar, and clicking one shows only the posts that have it. Click two, and you get the posts that have both.

@@ -14,7 +14,8 @@ tags:
   - country/switzerland
 # The numbers, shown as a table before the story. The rating, distance,
 # ascent and time also become the filters in the sidebar (Rating, Altitude
-# gain, Distance, Time, Gradient) by themselves.
+# gain, Distance, Time, Gradient) by themselves. A point with a latitude and
+# longitude is also a dot on the map of the route.gpx below.
 facts:
   location: Bernese Oberland
   grade: "T1 (with a bell)"
@@ -22,10 +23,16 @@ facts:
   points:
     - name: The farm in Zweilütschinen
       altitude: 652
+      latitude: 46.63198
+      longitude: 7.90094
     - name: The water trough
       altitude: 1240
+      latitude: 46.64411
+      longitude: 7.97935
     - name: The Bussalp
       altitude: 1790
+      latitude: 46.65099
+      longitude: 7.99203
   distance: 11.2
   ascent: 1180
   movingTime: "6:30"

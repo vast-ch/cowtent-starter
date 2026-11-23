@@ -29,4 +29,4 @@ posts/<name>/gallery/        the photos at the end: "01 - The view.jpg"
 pages/<name>/index.md        a page (About me), its "cover - ….jpg" next to it
 ```
 
-Version 0.2.1, see [CHANGELOG.md](CHANGELOG.md).
+Version 0.2.2, see [CHANGELOG.md](CHANGELOG.md).

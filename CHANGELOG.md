@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.2.2 - 2026-11-23
+
+- **Places and photos on the map** in 02 Writing your blog: a point's
+  `latitude` and `longitude` and where to find them, and the gallery's
+  photos with GPS on the map by themselves. Bella's points are on her map.
+- cowtent-core v0.6.1
+
 ## v0.2.1 - 2026-11-23
 
 - **Cloudflare, Vercel and Render** in 03 Your own web address and other
