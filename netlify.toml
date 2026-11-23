@@ -1,0 +1,5 @@
+# For Netlify: how to build the blog. Everything else the site needs from
+# its host (its security policy, headers) comes with cowtent-core's build.
+[build]
+  command = "pnpm build"
+  publish = "dist"

@@ -1,36 +1,11 @@
 ---
-title: How to make this blog your own
-date: 2026-11-21
+title: "02 Writing your blog"
+date: 2026-11-22
 tags:
   - howto
 ---
 
-This whole blog is a folder of plain text files: one file with the settings, and a folder for every post with its story and photos in it. You change a file, and a minute or two later the website shows the change. There's no app to install and no database to look after.
-
-## A few words first
-
-The steps below use **GitHub**, a free website that keeps your files and puts your blog online. It's just the easiest way to start: the blog isn't tied to it, and it works anywhere that can show a plain website.
-
-GitHub has some words of its own. These are the only ones you need:
-
-- **Repository** - your blog's folder on GitHub, with all its files.
-- **Fork** - your own copy of someone else's repository. You'll fork Bella's blog and make it yours.
-- **Commit** - GitHub's word for *save*. Every time you change a file you click **Commit changes**, and your blog updates with it.
-
-## Getting started
-
-Ten minutes from now you'll have a blog of your own on the web.
-
-1. Sign in to [GitHub](https://github.com), or make a free account.
-2. Open [Bella's blog on GitHub](https://github.com/vast-ch/cowtent-starter) and click **Fork** at the top right.
-3. Under **Repository name**, write a short name for your blog, like `my-blog`. It becomes part of your blog's address. Click **Create fork**.
-4. In your copy, open **Settings**, then **Pages** on the left, and set **Source** to **GitHub Actions**. (Actions is the part of GitHub that turns your files into the website.)
-5. Open the **Actions** tab at the top and click the green button that turns them on.
-6. Go back to the **Code** tab, open the file `site.yaml` and click the pencil ✏️ to edit it. Change `title: Bella's Cowtent` to the name of your blog, then click **Commit changes…** and **Commit changes** again.
-
-Now look at the **Actions** tab. After two or three minutes the yellow dot turns into a green tick ✅, and your blog is online at `https://<your username>.github.io/<repository name>`. For the user `BellaTheCow` and the name `my-blog`, that's `https://bellathecow.github.io/my-blog`. You'll also find the address under **Settings** → **Pages**. You made that!
-
-Every change you commit updates the site the same way. If you see a red cross ❌ instead, something in a file isn't right, and your old version simply stays online. Click the cross, then **build**, and the message tells you which file and what's wrong. Fix it and commit again.
+Everything on your blog is a file you can change right on GitHub: open it, click the pencil ✏️, change it and commit. This is everything you can write, from your blog's name to a post with its photos, map and tags. Your blog isn't online yet? Start with [01 Getting started](../2026-11-23-getting-started/index.md).
 
 ## Your blog's settings
 
@@ -86,7 +61,26 @@ The story. A blank line starts a new paragraph.
 ```
 
 4. Commit.
-5. Open your new folder, click **Add file** → **Upload files**, and drop in the photo for the top of the post. Name it `cover - ` and what's in it, like `cover - The fjord from the top.jpg`: that's the big photo at the top of the post and next to it on the front page, and the words after `cover - ` are read out to people who can't see it. Photos straight from your phone are fine, the blog makes smaller copies by itself.
+
+A minute or two later the post is on your blog.
+
+### The photo on top
+
+The big photo at the top of a post, also shown next to it on the front page, is the photo in the post's folder named `cover - ` and what's in it:
+
+```
+posts/2025-06-01-my-first-trip/cover - The fjord from the top.jpg
+```
+
+Open your post's folder, click **Add file** → **Upload files**, drop the photo in and commit. The words after `cover - ` are read out to people who can't see the photo. Photos straight from your phone are fine, the blog makes smaller copies by itself. The About page gets its photo the same way, in `pages/about`.
+
+### Photos in the story
+
+Upload a photo into the post's folder and put it in the story with a `!`, its description in the square brackets and its name in the round ones:
+
+```markdown title="posts/2025-06-01-my-first-trip/index.md"
+![Lunch by the lake](./lunch.jpg)
+```
 
 ### The photo gallery
 
@@ -99,7 +93,17 @@ The photos at the end of a post, in a grid that opens full screen when clicked, 
 
 A photo's name can't have a `?` or `#` in it.
 
-Not finished yet? Add `published: false` under the title, and the post stays off the site until you remove that line.
+### Links to your other posts
+
+Link to another post by its `index.md`, and the link takes your readers to that post:
+
+```markdown title="posts/2025-06-01-my-first-trip/index.md"
+Like on [Bella's trip to the alp](../2025-06-01-up-to-the-alp/index.md).
+```
+
+### Not finished yet?
+
+Add `published: false` under the title, and the post stays off the site until you remove that line.
 
 [Bella's alp post](../2025-06-01-up-to-the-alp/index.md) shows everything else a post can have, like the table of facts. Open its `index.md` on GitHub and copy whatever you need.
 
@@ -214,15 +218,3 @@ The ranges aren't fixed: they adapt to your posts. Say you have three posts with
 - **> 1500 m** - the 2,300 m post, and anything bigger
 
 Write a fourth post with 1,800 m and a new range **< 2000 m** appears, while the last one becomes **> 2000 m**. Each range ends at a round number, and a filter never has more than 5 of them. A post without that number simply isn't in that filter.
-
-## Your own web address
-
-Your blog keeps its `github.io` address for as long as you like. If you'd rather have your own, like `bellascowtent.ch`:
-
-1. Buy the name from a domain seller (Infomaniak, Namecheap, Gandi…).
-2. On GitHub, in your blog's **Settings** → **Pages** → **Custom domain**, type the name and click **Save**.
-3. At the domain seller, find the domain's **DNS** settings (the address book that tells browsers where your blog lives) and add the entries [GitHub lists](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site): four `A` entries for `bellascowtent.ch` pointing to `185.199.108.153`, `185.199.109.153`, `185.199.110.153` and `185.199.111.153`, and a `CNAME` entry for `www` pointing to `<your username>.github.io`. The seller's help pages show where to click.
-4. Wait until GitHub's check in **Settings** → **Pages** turns green (from a few minutes to a day), then tick **Enforce HTTPS** so the address is secure.
-5. Update the blog once so its RSS feed uses the new address: **Actions** → **Publish** → **Run workflow**.
-
-Visitors using the old `github.io` address are then sent to the new one automatically.

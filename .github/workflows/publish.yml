@@ -25,16 +25,15 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v6
+      # pnpm's version is packageManager in package.json, Node's .node-version
       - uses: pnpm/action-setup@v4
-        with:
-          version: 10
       - uses: actions/setup-node@v6
         with:
-          node-version: 24
+          node-version-file: .node-version
       - id: pages
         uses: actions/configure-pages@v5
-      # No lockfile: every build gets the newest cowtent-core from its main
-      # branch
+      # No lockfile, and pnpm build updates cowtent-core first: every build
+      # gets the newest one from its main branch
       - run: pnpm install
       # The address of the site (site.yaml's url: wins when there is one):
       # for the RSS feed, the links that get shared, and the path the site
