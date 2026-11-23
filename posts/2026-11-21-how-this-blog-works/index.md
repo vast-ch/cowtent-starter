@@ -50,7 +50,7 @@ The pictures and the About page are files too:
 
 - **`cover.jpg`** - your photo, shown next to the blog's name. To change it, click **Add file** → **Upload files**, drop in your own photo named `cover.jpg` and commit: it replaces Bella's. A square photo works best.
 - **`favicon.svg`** - optional, the little icon in the browser tab.
-- **`pages/about/index.md`** - your About me page. Change the text, upload your own photo into the same folder, and write its name after `image:`.
+- **`pages/about/index.md`** - your About me page. Change the text, then upload your own photo into the same folder, named `cover - ` and what's in it, like `cover - Me on the summit.jpg`, and delete Bella's.
 
 **Every word around your posts** can be changed too, in `languages/en.yaml` (or `de.yaml` for German). For example, to say "All my trips" instead of "All adventures" in the sidebar, add:
 
@@ -67,13 +67,12 @@ Every post is its own folder inside the `posts` folder. In it is a file called `
 
 1. Open the `posts` folder and click **Add file** → **Create new file**.
 2. For the name, type `2025-06-01-my-first-trip/index.md`. Typing the `/` creates the folder. The folder's name becomes the post's address on the web, so keep it short, in lower case, with `-` instead of spaces. Starting it with the date keeps your posts in order.
-3. Write the post. The part between the two `---` lines at the top describes the post (its title, date, photos and so on), and everything below is the story:
+3. Write the post. The part between the two `---` lines at the top describes the post (its title, date, tags and so on), and everything below is the story:
 
 ```markdown title="posts/2025-06-01-my-first-trip/index.md"
 ---
 title: My first trip
 date: 2025-06-01
-image: ./cover.jpg
 tags:
   - hiking
   - country/norway
@@ -87,9 +86,7 @@ The story. A blank line starts a new paragraph.
 ```
 
 4. Commit.
-5. Open your new folder, click **Add file** → **Upload files**, and drop in the photo for the top of the post, named as you wrote it above: `cover.jpg`. Photos straight from your phone are fine, the blog makes smaller copies by itself.
-
-`image` is the big photo at the top of the post.
+5. Open your new folder, click **Add file** → **Upload files**, and drop in the photo for the top of the post. Name it `cover - ` and what's in it, like `cover - The fjord from the top.jpg`: that's the big photo at the top of the post and next to it on the front page, and the words after `cover - ` are read out to people who can't see it. Photos straight from your phone are fine, the blog makes smaller copies by itself.
 
 ### The photo gallery
 
@@ -97,7 +94,7 @@ The photos at the end of a post, in a grid that opens full screen when clicked, 
 
 1. On your computer, make a folder called `gallery` and put the photos in it.
 2. Name each photo after what's in it, like `The view from the top.jpg`. The name is shown under the photo, and read out to people who can't see it.
-3. To put them in order, start the names with a number and a space: `01 The view from the top.jpg`, `02 Lunch by the lake.jpg`. Photos without a number come last.
+3. To put them in order, start the names with a number and ` - `: `01 - The view from the top.jpg`, `02 - Lunch by the lake.jpg`. Photos without a number come last.
 4. Open your post's folder on GitHub, click **Add file** → **Upload files**, drag in the whole `gallery` folder and commit.
 
 A photo's name can't have a `?` or `#` in it.

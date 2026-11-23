@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.1.1 - 2026-11-23
+
+- **Covers and galleries by file name**: the photo on top of a post or
+  page is the one named `cover - <what's in it>.jpg` next to it, instead
+  of `image:` in the front matter, and gallery photos are numbered with
+  ` - `: `01 - Through town on the way up.jpg`
+
 ## v0.1.0 - 2026-11-23
 
 The first version of Bella's Cowtent, the sample blog to fork.

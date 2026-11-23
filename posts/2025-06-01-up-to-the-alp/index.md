@@ -1,11 +1,11 @@
 ---
 # A sample post: everything a post can have. The folder name is the address
 # of the post (/2025-06-01-up-to-the-alp), the date at its start is only for
-# keeping the folders in order.
+# keeping the folders in order. The big photo on top of the post and next to
+# it on the front page is the one named "cover - <what's in it>.jpg" in this
+# folder, the photos at the end are the gallery folder.
 title: Up to the alp for the summer
 date: 2025-06-01
-# The big photo on top of the post and next to it on the front page
-image: ./cover.jpg
 # Names for these are in languages/en.yaml. Click one on the site and the
 # front page lists only the posts with it.
 tags:

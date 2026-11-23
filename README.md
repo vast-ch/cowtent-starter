@@ -11,11 +11,13 @@ into the website after every commit
 [cowtent-core](https://github.com/vast-ch/cowtent-core).
 
 ```
-site.yaml               title, colour, menu, language, theme
-languages/en.yaml       tag names, and any word of the blog to reword
-cover.jpg               the sidebar photo
-posts/<name>/index.md   a post, its photos next to it
-pages/<name>/index.md   a page (About me)
+site.yaml                    title, colour, menu, language, theme
+languages/en.yaml            tag names, and any word of the blog to reword
+cover.jpg                    the sidebar photo
+posts/<name>/index.md        a post, its photos next to it
+posts/<name>/cover - ….jpg   the photo on top: "cover - The view.jpg"
+posts/<name>/gallery/        the photos at the end: "01 - The view.jpg"
+pages/<name>/index.md        a page (About me), its "cover - ….jpg" next to it
 ```
 
-Version 0.1.0, see [CHANGELOG.md](CHANGELOG.md).
+Version 0.1.1, see [CHANGELOG.md](CHANGELOG.md).
