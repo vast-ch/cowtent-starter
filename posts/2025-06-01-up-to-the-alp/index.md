@@ -3,7 +3,8 @@
 # of the post (/2025-06-01-up-to-the-alp), the date at its start is only for
 # keeping the folders in order. The big photo on top of the post and next to
 # it on the front page is the one named "cover - <what's in it>.jpg" in this
-# folder, the photos at the end are the gallery folder.
+# folder, the photos at the end are the gallery folder, and the map above
+# them is route.gpx.
 title: Up to the alp for the summer
 date: 2025-06-01
 # Names for these are in languages/en.yaml. Click one on the site and the
@@ -15,7 +16,7 @@ tags:
 # The numbers, shown as a table before the story. The rating, distance,
 # ascent and time also become the filters in the sidebar (Rating, Altitude
 # gain, Distance, Time, Gradient) by themselves. A point with a latitude and
-# longitude is also a dot on the map of the route.gpx below.
+# longitude is also a dot on the map of route.gpx.
 facts:
   location: Bernese Oberland
   grade: "T1 (with a bell)"
@@ -52,10 +53,6 @@ We leave at dawn, before the traffic. The humans call it the *Alpaufzug*. I call
 Above the last houses the road turns into a path, and the path goes **up**. 1,180 m of it. I take it slowly: four stomachs, one set of legs. Halfway there's a **water trough**, and nobody, not even the farmer, gets me past it before I've had a proper drink.
 
 The last bit is the steepest, and then the alp opens up: grass to the horizon, the mountains all around, and a hut that smells of cheese, which I choose not to think about.
-
-## The way up
-
-![From the farm to the Bussalp](./route.gpx)
 
 ## What I learned
 

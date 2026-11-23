@@ -136,27 +136,18 @@ A bold first line works as the heading of the point, and the next line, starting
 
 ## Maps
 
-Recorded your route with a watch or an app like Strava or Komoot? Most of them can save it as a **GPX file**. Upload that file into the post's folder, the same way as the photos, and put it in your story like a photo, with a `!` in front:
+Recorded your route with a watch or an app like Strava or Komoot? Most of them can save it as a **GPX file**. Name it `route.gpx` and upload it into the post's folder, the same way as the photos. There's nothing to write: your route appears on the Swiss topographic map (swisstopo) after the story, above the photo gallery, with a link under it to download the file.
 
-```markdown title="posts/2025-06-01-my-first-trip/index.md"
-![The way up](./route.gpx)
+```
+posts/2025-06-01-my-first-trip/index.md
+posts/2025-06-01-my-first-trip/route.gpx
 ```
 
-Your route then appears on the Swiss topographic map (swisstopo), with a link under it to download the file. Bella's looks like this:
-
-![From the farm to the Bussalp](../2025-06-01-up-to-the-alp/route.gpx)
-
-Without the `!` it's just a link to download the file:
-
-```markdown title="posts/2025-06-01-my-first-trip/index.md"
-[Download the GPX](./route.gpx)
-```
-
-The words in the square brackets are the map's name, and are read out to people who can't see it.
+Bella's post has one, have a look at [Up to the alp for the summer](../2025-06-01-up-to-the-alp/index.md).
 
 ### Places on the map
 
-The `points` of a post's `facts:` (see [Filters](#filters)) get a dot on the map when you give them a `latitude` and `longitude`. Hover a dot and it shows the point's name and altitude:
+The `points` of a post's `facts:` (see [Filters](#filters)) get a dot on the route's map when you give them a `latitude` and `longitude`. Hover a dot and it shows the point's name and altitude:
 
 ```yaml title="posts/2025-06-01-my-first-trip/index.md"
 facts:
@@ -171,9 +162,19 @@ To find them, right-click the place on [Google Maps](https://maps.google.com): t
 
 ### Photos on the map
 
-There's nothing to write for these. Phones and many cameras save where a photo was taken inside the photo itself (its GPS, in the EXIF). Every photo in the post's `gallery` folder that has it appears on the map as a small round photo where it was taken, and a click on it opens it in the gallery.
+There's nothing to write for these. Phones and many cameras save where a photo was taken inside the photo itself (its GPS, in the EXIF). Every photo in the post's `gallery` folder that has it appears on the route's map as a small round photo where it was taken, and a click on it opens it in the gallery.
 
 Your photos don't show up on the map? The GPS was taken out on the way: some apps remove it when they export or resize a photo (Apple Photos: in the export, turn on **Include location information**). The photos on your blog never have it, only the ones you upload: the blog makes its own copies of them without it. Mind that the ones you upload are in your blog's repository, which anyone can see.
+
+### Another map in the story
+
+Want a second route somewhere in the story, say the way to the hut the day before? Upload it with any other name and put it in the text like a photo, with a `!` in front:
+
+```markdown title="posts/2025-06-01-my-first-trip/index.md"
+![The way to the hut](./hut.gpx)
+```
+
+It's a map right there, with its download link, but only of its own route: the points and the photos are on the map of `route.gpx`. The words in the square brackets are the map's name, and are read out to people who can't see it. Without the `!` it's just a link to download the file.
 
 ## Tags
 

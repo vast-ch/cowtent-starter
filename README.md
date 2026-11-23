@@ -26,7 +26,8 @@ cover.jpg                    the sidebar photo
 posts/<name>/index.md        a post, its photos next to it
 posts/<name>/cover - ….jpg   the photo on top: "cover - The view.jpg"
 posts/<name>/gallery/        the photos at the end: "01 - The view.jpg"
+posts/<name>/route.gpx       the route on a map above them
 pages/<name>/index.md        a page (About me), its "cover - ….jpg" next to it
 ```
 
-Version 0.2.3, see [CHANGELOG.md](CHANGELOG.md).
+Version 0.2.4, see [CHANGELOG.md](CHANGELOG.md).

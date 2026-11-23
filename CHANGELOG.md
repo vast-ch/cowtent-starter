@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.2.4 - 2026-11-24
+
+- **The map is `route.gpx`**: a post's route named exactly that is on the
+  map above the gallery by itself, with nothing to write. 02 Writing your
+  blog says so, and how to put another route in the story. Bella's post
+  doesn't embed hers any more.
+- cowtent-core v0.7.0
+
 ## v0.2.3 - 2026-11-23
 
 - **Bella's photos are on her map**: her gallery's photos have GPS along
