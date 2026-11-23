@@ -9,7 +9,8 @@ Everything works from the GitHub website: nothing to install.
 2. [Writing your blog](posts/2026-11-22-writing-your-blog/index.md) - your
    settings, posts, photos and galleries, maps, tags and filters
 3. [Your own web address and other hosts](posts/2026-11-21-web-address-and-hosting/index.md) -
-   an address like `bellascowtent.ch`, or your blog on Netlify
+   an address like `bellascowtent.ch`, or your blog on Netlify, Cloudflare,
+   Vercel or Render
 
 A sample blog written by Bella the cow, on **cowtent** (cow + tent =
 content). Its posts, pages and photos are plain files; GitHub builds them
@@ -28,4 +29,4 @@ posts/<name>/gallery/        the photos at the end: "01 - The view.jpg"
 pages/<name>/index.md        a page (About me), its "cover - ….jpg" next to it
 ```
 
-Version 0.2.0, see [CHANGELOG.md](CHANGELOG.md).
+Version 0.2.1, see [CHANGELOG.md](CHANGELOG.md).

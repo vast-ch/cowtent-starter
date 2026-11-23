@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.2.1 - 2026-11-23
+
+- **Cloudflare, Vercel and Render** in 03 Your own web address and other
+  hosts: the few settings to type in once, the blog's address and your
+  own domain on each
+- `engines` in `package.json`, for hosts that take Node's version from
+  there (Vercel)
+
 ## v0.2.0 - 2026-11-23
 
 - **The guide in three parts**: 01 Getting started (from zero to your

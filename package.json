@@ -1,6 +1,6 @@
 {
   "name": "cowtent-starter",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "description": "Bella's Cowtent - a sample blog on cowtent: fork it to start your own",
   "scripts": {
@@ -10,5 +10,8 @@
   "dependencies": {
     "cowtent-core": "github:vast-ch/cowtent-core"
   },
-  "packageManager": "pnpm@10.34.9"
+  "packageManager": "pnpm@10.34.9",
+  "engines": {
+    "node": "24.x"
+  }
 }
