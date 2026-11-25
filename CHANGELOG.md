@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.2.7 - 2026-11-25
+
+- **02 Writing your blog** tells of the 3D button, the enlarge button at
+  the map's top right, and the photos on pins.
+- cowtent-core v0.11.0
+
 ## v0.2.6 - 2026-11-25
 
 - **The cover is the gallery's first photo**, and on the map with GPS.
