@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.2.12 - 2026-11-26
+
+- cowtent-core v0.13.2: the photos on the altitude profile are pins, like
+  on the map, their tip on the relief where each was taken.
+
 ## v0.2.11 - 2026-11-25
 
 - cowtent-core v0.13.1: the arrows of a full-screen photo show on a
