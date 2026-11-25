@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.2.11 - 2026-11-25
+
+- cowtent-core v0.13.1: the arrows of a full-screen photo show on a
+  phone too.
+
 ## v0.2.10 - 2026-11-25
 
 - cowtent-core v0.13.0: a post's title rises into the mountains at the
