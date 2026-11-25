@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.2.8 - 2026-11-25
+
+- cowtent-core v0.11.1: a link to the map or a photo opens it again, and
+  the map in 3D shows the terrain from the first click.
+
 ## v0.2.7 - 2026-11-25
 
 - **02 Writing your blog** tells of the 3D button, the enlarge button at
