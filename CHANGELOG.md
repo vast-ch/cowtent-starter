@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.2.13 - 2026-11-26
+
+- cowtent-core v0.13.3: a tick every 5 km on the altitude profile, and the
+  photos' pins on the map no longer grow under the mouse.
+
 ## v0.2.12 - 2026-11-26
 
 - cowtent-core v0.13.2: the photos on the altitude profile are pins, like
