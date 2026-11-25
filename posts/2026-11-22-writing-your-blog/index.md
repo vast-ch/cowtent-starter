@@ -66,7 +66,7 @@ A minute or two later the post is on your blog.
 
 ### The photo on top
 
-The big photo at the top of a post, also shown next to it on the front page, is the photo in the post's folder named `cover - ` and what's in it:
+The big photo at the top of a post, also shown next to it on the front page and first in its photo gallery, is the photo in the post's folder named `cover - ` and what's in it:
 
 ```
 posts/2025-06-01-my-first-trip/cover - The fjord from the top.jpg
@@ -84,7 +84,7 @@ Upload a photo into the post's folder and put it in the story with a `!`, its de
 
 ### The photo gallery
 
-The photos at the end of a post, in a grid that opens full screen when clicked, come from a folder called `gallery` inside the post's folder. There's nothing to write for them:
+The photos at the end of a post, in a grid that opens full screen when clicked, are its cover and then the photos of a folder called `gallery` inside the post's folder. There's nothing to write for them:
 
 1. On your computer, make a folder called `gallery` and put the photos in it.
 2. Name each photo after what's in it, like `The view from the top.jpg`. The name is shown under the photo, and read out to people who can't see it.

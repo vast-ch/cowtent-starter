@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.2.6 - 2026-11-25
+
+- **The cover is the gallery's first photo**, and on the map with GPS.
+  02 Writing your blog says so.
+- cowtent-core v0.9.0
+
 ## v0.2.5 - 2026-11-25
 
 - **02 Writing your blog** says where the route's download link is now
