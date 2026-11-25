@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.2.10 - 2026-11-25
+
+- cowtent-core v0.13.0: a post's title rises into the mountains at the
+  top as you scroll, and the altitude profile is wider.
+
 ## v0.2.9 - 2026-11-25
 
 - **02 Writing your blog** tells of the altitude profile under the map

@@ -1,6 +1,6 @@
 {
   "name": "cowtent-starter",
-  "version": "0.2.9",
+  "version": "0.2.10",
   "private": true,
   "description": "Bella's Cowtent - a sample blog on cowtent: fork it to start your own",
   "scripts": {
