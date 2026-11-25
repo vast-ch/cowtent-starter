@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.2.5 - 2026-11-25
+
+- **02 Writing your blog** says where the route's download link is now
+  (the facts), that the map opens big, and that a photo opened full
+  screen can be shown on the map.
+- cowtent-core v0.8.0
+
 ## v0.2.4 - 2026-11-24
 
 - **The map is `route.gpx`**: a post's route named exactly that is on the

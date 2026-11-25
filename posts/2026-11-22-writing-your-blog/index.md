@@ -136,7 +136,7 @@ A bold first line works as the heading of the point, and the next line, starting
 
 ## Maps
 
-Recorded your route with a watch or an app like Strava or Komoot? Most of them can save it as a **GPX file**. Name it `route.gpx` and upload it into the post's folder, the same way as the photos. There's nothing to write: your route appears on the Swiss topographic map (swisstopo) after the story, above the photo gallery, with a link under it to download the file.
+Recorded your route with a watch or an app like Strava or Komoot? Most of them can save it as a **GPX file**. Name it `route.gpx` and upload it into the post's folder, the same way as the photos. There's nothing to write: your route appears on the Swiss topographic map (swisstopo) after the story, above the photo gallery. The button under its zoom opens it big, and the facts at the top get a link to download the file.
 
 ```
 posts/2025-06-01-my-first-trip/index.md
@@ -162,7 +162,7 @@ To find them, right-click the place on [Google Maps](https://maps.google.com): t
 
 ### Photos on the map
 
-There's nothing to write for these. Phones and many cameras save where a photo was taken inside the photo itself (its GPS, in the EXIF). Every photo in the post's `gallery` folder that has it appears on the route's map as a small round photo where it was taken, and a click on it opens it in the gallery.
+There's nothing to write for these. Phones and many cameras save where a photo was taken inside the photo itself (its GPS, in the EXIF). Every photo in the post's `gallery` folder that has it appears on the route's map as a small round photo where it was taken, and a click on it opens it full screen. The other way round, a photo opened full screen has **Show on the map**.
 
 Your photos don't show up on the map? The GPS was taken out on the way: some apps remove it when they export or resize a photo (Apple Photos: in the export, turn on **Include location information**). The photos on your blog never have it, only the ones you upload: the blog makes its own copies of them without it. Mind that the ones you upload are in your blog's repository, which anyone can see.
 
