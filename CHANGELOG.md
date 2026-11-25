@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.2.9 - 2026-11-25
+
+- **02 Writing your blog** tells of the altitude profile under the map
+  and the walk along the route.
+- cowtent-core v0.12.0
+
 ## v0.2.8 - 2026-11-25
 
 - cowtent-core v0.11.1: a link to the map or a photo opens it again, and
