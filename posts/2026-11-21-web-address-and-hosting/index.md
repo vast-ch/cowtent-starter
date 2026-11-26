@@ -67,7 +67,7 @@ Your blog is online at `https://<project name>.vercel.app`, and knows its addres
 1. Open [Render](https://dashboard.render.com/register) and sign up with GitHub.
 2. Click **New** → **Static Site** and pick your blog.
 3. Type `corepack enable && pnpm install && pnpm build` as **Build Command** and `dist` as **Publish Directory**. Click **Deploy Static Site**.
-4. For the maps: open **Headers** on the left and add a header with the path `/assets/*`, the name `Access-Control-Allow-Origin` and the value `*`. Without it, the swisstopo map can't load your route.
+4. For the maps: open **Headers** on the left and add a header with the path `/assets/*`, the name `Access-Control-Allow-Origin` and the value `*`. Without it, other map sites can't open your route's file.
 
 Your blog is online at `https://<name>.onrender.com`, and knows its address by itself. **Your own address on Render:** open **Settings** → **Custom Domains** → **Add Custom Domain**, then write the new address as `url:` in `site.yaml`.
 

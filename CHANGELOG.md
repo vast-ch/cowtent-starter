@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.2.16 - 2026-11-26
+
+- cowtent-core v0.15.1, whose checks pass on this blog again.
+- The how-tos: the map is OpenStreetMap, anywhere in the world, and a
+  trip can have a route a day (`01 - route.gpx`, `02 - route.gpx`, …).
+
 ## v0.2.15 - 2026-11-26
 
 - cowtent-core v0.15.0: the maps are OpenStreetMap, worldwide, in 3D too;
