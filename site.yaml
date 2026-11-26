@@ -14,10 +14,6 @@ description: A cow on summer holidays in the Alps. Grass reviews, trail etiquett
 # Your name, shown as "by ..." at the top and bottom of every page
 owner: Bella
 
-# The colour of links, buttons and highlights: any "#rrggbb"
-# (pick one on https://htmlcolorcodes.com)
-colour: "#b45309"
-
 # Optional: with an email address, every post ends with a "Send me a comment"
 # button that opens the reader's email app
 # email: bella@example.com
@@ -45,6 +41,12 @@ language: en
 #   basecamp  the name across the top, the sidebar on the right in cards
 #   night     dark, with a menu bar under the stars across the top
 theme: alps
+
+# Your own colours instead of the theme's, up to seven "#rrggbb" (pick
+# them on https://htmlcolorcodes.com). The first is the colour of links,
+# buttons and highlights. Delete the # in front of the lines to use them.
+# colours:
+#   - "#b45309"
 
 # Let visitors pick a theme themselves: a "Theme" choice appears at the end
 # of the sidebar and in the menu on phones. Each visitor's browser remembers

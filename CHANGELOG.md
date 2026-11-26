@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.2.14 - 2026-11-26
+
+- cowtent-core v0.14.0: each theme's seven colours, and your own in
+  `colours:` in site.yaml. The blog's `colour:` is gone: Bella now wears
+  the theme's colours.
+
 ## v0.2.13 - 2026-11-26
 
 - cowtent-core v0.13.3: a tick every 5 km on the altitude profile, and the
