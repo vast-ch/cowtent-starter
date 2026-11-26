@@ -8,6 +8,19 @@ tags:
 
 Everything on your blog is a file you change in your blog's editor ([01 Getting started](../2026-11-23-getting-started/index.md) shows how to open it): click it, change it, and that's it. The editor saves as you type and puts your changes online by itself a couple of minutes later, while the preview of your blog in the other tab shows them straight away. This is everything you can write, from your blog's name to a post with its photos, map and tags. Your blog isn't online yet? Start with [01 Getting started](../2026-11-23-getting-started/index.md).
 
+## What's in your blog
+
+```
+site.yaml                    title, colours, menu, language, theme
+languages/en.yaml            tag names, and any word of the blog to reword
+cover.jpg                    your photo in the sidebar
+posts/<name>/index.md        a post, its photos next to it
+posts/<name>/cover - ….jpg   the photo on top: "cover - The view.jpg"
+posts/<name>/gallery/        the photos at the end: "01 - The view.jpg"
+posts/<name>/route.gpx       the route on a map above them
+pages/<name>/index.md        a page, like About me
+```
+
 ## Your blog's settings
 
 The file **`site.yaml`** holds the settings of the whole blog. Each line is a name, a colon and a value, like `title: My trips`, and the file explains every line above it:

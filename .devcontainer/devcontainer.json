@@ -26,6 +26,10 @@
   },
 
   "customizations": {
+    // The how-to for the next steps, open when the editor starts
+    "codespaces": {
+      "openFiles": ["posts/2026-11-23-getting-started/index.md"]
+    },
     "vscode": {
       "extensions": [
         // A form for the part between the --- lines, and a list of the posts
