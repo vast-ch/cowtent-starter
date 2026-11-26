@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.2.15 - 2026-11-26
+
+- cowtent-core v0.15.0: the maps are OpenStreetMap, worldwide, in 3D too;
+  a post can have several routes (`01 - route.gpx`, `02 - route.gpx`, …),
+  each in its colour on one map and one altitude profile; the gallery is
+  in rows, in its order.
+
 ## v0.2.14 - 2026-11-26
 
 - cowtent-core v0.14.0: each theme's seven colours, and your own in
