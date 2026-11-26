@@ -12,6 +12,6 @@ A blog you write in your web browser. Nothing to install.
 
 <p align="center">
   <a href="https://codespaces.new/vast-ch/cowtent-starter?quickstart=1">
-    <img src=".github/start-your-blog.svg" alt="Start your own blog" width="520">
+    <img src=".github/start-your-blog.svg" alt="Start your own blog" width="580">
   </a>
 </p>
