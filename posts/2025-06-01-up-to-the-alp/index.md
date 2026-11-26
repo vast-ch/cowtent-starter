@@ -7,6 +7,7 @@
 # them is route.gpx.
 title: Up to the alp for the summer
 date: 2025-06-01
+published: true
 # Names for these are in languages/en.yaml. Click one on the site and the
 # front page lists only the posts with it.
 tags:

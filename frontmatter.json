@@ -1,0 +1,101 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.framework.id": "other",
+  "frontMatter.content.supportedFileTypes": ["md"],
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "Posts",
+      "path": "[[workspace]]/posts",
+      "contentTypes": ["default"]
+    },
+    {
+      "title": "Pages",
+      "path": "[[workspace]]/pages",
+      "contentTypes": ["page"]
+    }
+  ],
+  "frontMatter.content.publicFolder": {
+    "path": "posts",
+    "relative": true
+  },
+  "frontMatter.content.draftField": {
+    "name": "published",
+    "type": "boolean",
+    "invert": true
+  },
+  "frontMatter.taxonomy.dateFormat": "yyyy-MM-dd",
+  "frontMatter.taxonomy.slugTemplate": "{{title}}",
+  "frontMatter.dashboard.openOnStart": true,
+  "frontMatter.panel.openOnSupportedFile": true,
+  "frontMatter.validation.enabled": true,
+  "frontMatter.contentHealth.enabled": false,
+  "frontMatter.panel.actions.disabled": ["optimizeSlug", "preview", "openOnWebsite", "startStopServer"],
+  "frontMatter.taxonomy.fieldGroups": [
+    {
+      "id": "point",
+      "labelField": "name",
+      "fields": [
+        { "title": "Name", "name": "name", "type": "string", "single": true, "required": true },
+        { "title": "Altitude (m)", "name": "altitude", "type": "number", "numberOptions": { "isDecimal": false } },
+        {
+          "title": "Latitude",
+          "name": "latitude",
+          "type": "number",
+          "description": "With the longitude, its pin on the map: right-click the place on openstreetmap.org, Show address",
+          "numberOptions": { "isDecimal": true, "min": -90, "max": 90 }
+        },
+        { "title": "Longitude", "name": "longitude", "type": "number", "numberOptions": { "isDecimal": true, "min": -180, "max": 180 } },
+        { "title": "Link", "name": "link", "type": "string", "single": true }
+      ]
+    }
+  ],
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": true,
+      "clearEmpty": true,
+      "template": "[[workspace]]/.frontmatter/templates/post.md",
+      "defaultFileName": "index",
+      "filePrefix": "{{date|yyyy-MM-dd}}",
+      "previewPath": "/",
+      "fields": [
+        { "title": "Title", "name": "title", "type": "string", "single": true, "required": true },
+        { "title": "Date", "name": "date", "type": "datetime", "dateFormat": "yyyy-MM-dd", "default": "{{now}}", "isPublishDate": true, "required": true },
+        {
+          "title": "Published",
+          "name": "published",
+          "type": "draft",
+          "default": false,
+          "description": "Off: a draft, only here in the editor's preview. On: on your blog."
+        },
+        { "title": "Tags", "name": "tags", "type": "tags", "description": "Like hiking or country/norway. Their names are in languages/en.yaml." },
+        { "title": "Featured", "name": "featured", "type": "boolean", "description": "Pinned at the top of the front page" },
+        {
+          "title": "The facts",
+          "name": "facts",
+          "type": "fields",
+          "description": "The table before the story. Rating, distance, ascent and time are also the filters in the sidebar.",
+          "fields": [
+            { "title": "Location", "name": "location", "type": "string", "single": true },
+            { "title": "Date, if not the post's", "name": "date", "type": "datetime", "dateFormat": "yyyy-MM-dd" },
+            { "title": "Grade", "name": "grade", "type": "string", "single": true, "description": "Like T4 or 5c" },
+            { "title": "Rating (stars)", "name": "rating", "type": "choice", "choices": [1, 2, 3, 4, 5] },
+            { "title": "Places on the way", "name": "points", "type": "block", "fieldGroup": ["point"] },
+            { "title": "Distance (km)", "name": "distance", "type": "number", "numberOptions": { "isDecimal": true, "min": 0 } },
+            { "title": "Ascent (m)", "name": "ascent", "type": "number", "numberOptions": { "isDecimal": false, "min": 0 } },
+            { "title": "Duration (h:mm)", "name": "duration", "type": "string", "single": true, "description": "Like 5:36 or 5:36:20" },
+            { "title": "Moving time (h:mm)", "name": "movingTime", "type": "string", "single": true, "description": "Like 4:50, instead of or with the duration" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page",
+      "pageBundle": true,
+      "defaultFileName": "index",
+      "fields": [
+        { "title": "Title", "name": "title", "type": "string", "single": true, "required": true }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 ---
 title: "03 Your own web address and other hosts"
 date: 2026-11-21
+published: true
 tags:
   - howto
 ---
@@ -27,7 +28,7 @@ Visitors using the old `github.io` address are then sent to the new one automati
 2. Click **Add new project** → **Import an existing project** → **GitHub**, let Netlify see your repositories, and pick your blog.
 3. Netlify shows the settings it read from your blog. Leave them as they are and click **Deploy**.
 
-Two or three minutes later your blog is online at an address like `https://wonderful-cow-1a2b3c.netlify.app`. For a nicer one, open **Project configuration** → **Change project name**. From now on, every commit updates the blog on Netlify too.
+Two or three minutes later your blog is online at an address like `https://wonderful-cow-1a2b3c.netlify.app`. For a nicer one, open **Project configuration** → **Change project name**. From now on, everything you save in the editor updates the blog on Netlify too.
 
 **Your own address on Netlify:** open **Domain management** → **Add a domain**, type the name you bought and follow the steps Netlify shows for its DNS. The blog uses the new address by itself from its next update: **Deploys** → **Trigger deploy** → **Deploy project**.
 
@@ -41,7 +42,7 @@ Two or three minutes later your blog is online at an address like `https://wonde
 2. Open **Workers & Pages**, click **Create**, choose **Pages** and **Connect to Git**. Connect GitHub and pick your blog.
 3. Set **Framework preset** to **None**, **Build command** to `pnpm build` and **Build output directory** to `dist`. Click **Save and Deploy**.
 
-A few minutes later your blog is online at `https://<project name>.pages.dev`. Cloudflare doesn't tell the blog its own address, so add it to `site.yaml` and commit, for its RSS feed and the links people share:
+A few minutes later your blog is online at `https://<project name>.pages.dev`. Cloudflare doesn't tell the blog its own address, so add it to `site.yaml`, for its RSS feed and the links people share:
 
 ```yaml title="site.yaml"
 url: https://my-blog.pages.dev

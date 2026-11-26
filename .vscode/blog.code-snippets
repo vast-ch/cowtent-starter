@@ -1,0 +1,76 @@
+{
+  // Type the first letters of a name below in a post (or press Ctrl+Space)
+  // and pick it from the list. Tab jumps to the next part to fill in.
+  "Photo in the story": {
+    "scope": "markdown",
+    "prefix": ["photo", "image"],
+    "body": "![${1:What's in it}](./${2:photo.jpg})",
+    "description": "A photo from the post's folder, with what's in it"
+  },
+  "Route map in the story": {
+    "scope": "markdown",
+    "prefix": ["map", "route", "gpx"],
+    "body": "![${1:The way to the hut}](./${2:hut.gpx})",
+    "description": "A map of a GPX file from the post's folder"
+  },
+  "Link": {
+    "scope": "markdown",
+    "prefix": "link",
+    "body": "[${1:text}](${2:https://})",
+    "description": "A link to a website"
+  },
+  "Link to another post": {
+    "scope": "markdown",
+    "prefix": ["post", "link to post"],
+    "body": "[${1:text}](../${2:2025-06-01-my-first-trip}/index.md)",
+    "description": "A link to another of your posts, by its folder"
+  },
+  "Heading": {
+    "scope": "markdown",
+    "prefix": ["heading", "##"],
+    "body": "## ${1:Heading}",
+    "description": "A heading in the story"
+  },
+  "Good point": {
+    "scope": "markdown",
+    "prefix": ["good", "plus", "+"],
+    "body": "- [+] **${1:What was good}**\n  ${2:Why}",
+    "description": "A point with a green +"
+  },
+  "Bad point": {
+    "scope": "markdown",
+    "prefix": ["bad", "minus", "-"],
+    "body": "- [-] **${1:What was bad}**\n  ${2:Why}",
+    "description": "A point with a red -"
+  },
+  "Question": {
+    "scope": "markdown",
+    "prefix": ["question", "?"],
+    "body": "- [?] **${1:What's still open}**\n  ${2:Why}",
+    "description": "A point with a ?"
+  },
+  "Important": {
+    "scope": "markdown",
+    "prefix": ["important", "!"],
+    "body": "- [!] **${1:What not to forget}**\n  ${2:Why}",
+    "description": "A point with a !"
+  },
+  "Good to know": {
+    "scope": "markdown",
+    "prefix": ["info", "good to know"],
+    "body": "- [i] **${1:Good to know}**\n  ${2:Why}",
+    "description": "A point with an i"
+  },
+  "Highlight": {
+    "scope": "markdown",
+    "prefix": ["star", "highlight"],
+    "body": "- [*] **${1:The best bit}**\n  ${2:Why}",
+    "description": "A point with a star"
+  },
+  "To do": {
+    "scope": "markdown",
+    "prefix": ["todo", "checkbox"],
+    "body": "- [ ] ${1:Something to do}",
+    "description": "An empty checkbox; [x] ticks it"
+  }
+}

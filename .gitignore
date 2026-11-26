@@ -2,3 +2,5 @@
 /dist/
 # Every build installs the newest cowtent-core, nothing is pinned
 /pnpm-lock.yaml
+# Front Matter CMS's cache; its database (the tags) is the blog's
+/.frontmatter/content/

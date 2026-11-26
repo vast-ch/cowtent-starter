@@ -1,0 +1,38 @@
+// The blog's editor in the browser, on GitHub Codespaces: VS Code with the
+// blog running next to it. Open it from the green Code button of your copy
+// of the blog: Codespaces → Create codespace on main.
+{
+  "name": "Your blog",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:24",
+
+  // Once, when the codespace is made: pnpm (its version is packageManager
+  // in package.json) and the blog's tools. And when a change came to GitHub
+  // from elsewhere (another codespace, the GitHub website), the editor's
+  // own changes go on top of it instead of stopping at a conflict.
+  "postCreateCommand": "git config pull.rebase true && git config rebase.autoStash true && sudo corepack enable && COREPACK_ENABLE_DOWNLOAD_PROMPT=0 pnpm install",
+
+  // Every time it opens: the blog itself, reloading on every save
+  "postAttachCommand": {
+    "preview": "pnpm start"
+  },
+
+  // Opens in a tab of its own as soon as the blog runs (the preview inside
+  // the editor can't sign in to it on its own)
+  "portsAttributes": {
+    "4200": {
+      "label": "Your blog",
+      "onAutoForward": "openBrowser"
+    }
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        // A form for the part between the --- lines, and a list of the posts
+        "eliostruyf.vscode-front-matter",
+        // Saves to GitHub by itself: no commit, no push
+        "vsls-contrib.gitdoc"
+      ]
+    }
+  }
+}

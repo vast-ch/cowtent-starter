@@ -1,0 +1,51 @@
+{
+  // A post opens with the Front Matter form on the left (title, date,
+  // tags, facts) and its toolbar on top (bold, headings, links, photos)
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": { "other": "on", "comments": "off", "strings": "off" },
+    "editor.snippetSuggestions": "top"
+  },
+
+  // Saved a second after typing, and saved to GitHub two minutes after the
+  // last change (GitDoc): the blog rebuilds with it. Only when nothing in
+  // the file is wrong (the red squiggles), so a broken post stays home.
+  "files.autoSave": "afterDelay",
+  "gitdoc.enabled": true,
+  "gitdoc.autoCommitDelay": 120000,
+  "gitdoc.autoPush": "onCommit",
+  "gitdoc.pushMode": "push",
+  "gitdoc.autoPull": "onPush",
+  "gitdoc.pullOnOpen": true,
+  "gitdoc.commitOnClose": true,
+  "gitdoc.commitValidationLevel": "error",
+  "gitdoc.commitMessageFormat": "'Saved on' d LLL yyyy, HH:mm",
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.rebaseWhenSync": true,
+
+  // Only the blog in the file list: the tools' files are hidden
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "node_modules": true,
+    "dist": true,
+    ".devcontainer": true,
+    ".frontmatter": true,
+    ".github": true,
+    ".vscode": true,
+    ".gitignore": true,
+    ".node-version": true,
+    "CHANGELOG.md": true,
+    "frontmatter.json": true,
+    "netlify.toml": true,
+    "package.json": true,
+    "pnpm-lock.yaml": true
+  },
+  "explorer.confirmDragAndDrop": false,
+  "explorer.sortOrder": "mixed",
+
+  "workbench.startupEditor": "none",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "workbench.tips.enabled": false
+}

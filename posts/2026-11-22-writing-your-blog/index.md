@@ -1,11 +1,12 @@
 ---
 title: "02 Writing your blog"
 date: 2026-11-22
+published: true
 tags:
   - howto
 ---
 
-Everything on your blog is a file you can change right on GitHub: open it, click the pencil ✏️, change it and commit. This is everything you can write, from your blog's name to a post with its photos, map and tags. Your blog isn't online yet? Start with [01 Getting started](../2026-11-23-getting-started/index.md).
+Everything on your blog is a file you change in your blog's editor ([01 Getting started](../2026-11-23-getting-started/index.md) shows how to open it): click it, change it, and that's it. The editor saves as you type and puts your changes online by itself a couple of minutes later, while the preview of your blog in the other tab shows them straight away. This is everything you can write, from your blog's name to a post with its photos, map and tags. Your blog isn't online yet? Start with [01 Getting started](../2026-11-23-getting-started/index.md).
 
 ## Your blog's settings
 
@@ -23,9 +24,9 @@ The file **`site.yaml`** holds the settings of the whole blog. Each line is a na
 
 The pictures and the About page are files too:
 
-- **`cover.jpg`** - your photo, shown next to the blog's name. To change it, click **Add file** → **Upload files**, drop in your own photo named `cover.jpg` and commit: it replaces Bella's. A square photo works best.
+- **`cover.jpg`** - your photo, shown next to the blog's name. To change it, name your own photo `cover.jpg` and drag it from your computer onto the file list on the left of the editor: it replaces Bella's. A square photo works best.
 - **`favicon.svg`** - optional, the little icon in the browser tab.
-- **`pages/about/index.md`** - your About me page. Change the text, then upload your own photo into the same folder, named `cover - ` and what's in it, like `cover - Me on the summit.jpg`, and delete Bella's.
+- **`pages/about/index.md`** - your About me page. Change the text, then drag your own photo into the same folder, named `cover - ` and what's in it, like `cover - Me on the summit.jpg`, and delete Bella's.
 
 **Every word around your posts** can be changed too, in `languages/en.yaml` (or `de.yaml` for German). For example, to say "All my trips" instead of "All adventures" in the sidebar, add:
 
@@ -40,9 +41,9 @@ The file says where to find the list of every word you can change.
 
 Every post is its own folder inside the `posts` folder. In it is a file called `index.md` with the text, and the photos sit right next to it.
 
-1. Open the `posts` folder and click **Add file** → **Create new file**.
-2. For the name, type `2025-06-01-my-first-trip/index.md`. Typing the `/` creates the folder. The folder's name becomes the post's address on the web, so keep it short, in lower case, with `-` instead of spaces. Starting it with the date keeps your posts in order.
-3. Write the post. The part between the two `---` lines at the top describes the post (its title, date, tags and so on), and everything below is the story:
+1. On the far left of the editor, click **FM** (Front Matter): it shows your posts and pages as cards.
+2. Click **Create content**, pick **Posts** and type the post's title, like `My first trip`. The editor makes its folder, named after the date and the title (`2025-06-01-my-first-trip`), with a file called `index.md` in it, and opens it. The folder's name is the post's address on the web.
+3. Write the post. The part between the two `---` lines at the top describes the post: its title, date, tags and so on. You don't need to write it yourself: the form on the left fills it in, and says what each part is for. Everything below the second `---` is the story:
 
 ```markdown title="posts/2025-06-01-my-first-trip/index.md"
 ---
@@ -60,9 +61,11 @@ The story. A blank line starts a new paragraph.
 **Bold**, *italic*, and [a link](https://example.com).
 ```
 
-4. Commit.
+The buttons at the top of the editor make the selected words **bold** or *italic*, a heading, a list or a link. Type the first letters of `photo`, `map`, `link`, `heading`, `good` or `bad` in the story and the editor offers to write the rest; the <kbd>Tab</kbd> key jumps to the next part to fill in.
 
-A minute or two later the post is on your blog.
+4. When it's ready, switch on **Published** in the form.
+
+The preview of your blog in the other tab shows your post every time you save. A couple of minutes after you switch on **Published**, it's on your blog.
 
 ### The photo on top
 
@@ -72,11 +75,11 @@ The big photo at the top of a post, also shown next to it on the front page and 
 posts/2025-06-01-my-first-trip/cover - The fjord from the top.jpg
 ```
 
-Open your post's folder, click **Add file** → **Upload files**, drop the photo in and commit. The words after `cover - ` are read out to people who can't see the photo. Photos straight from your phone are fine, the blog makes smaller copies by itself. The About page gets its photo the same way, in `pages/about`.
+Drag the photo from your computer onto the post's folder in the file list on the left (the files icon, two sheets of paper, at the far left). To change a name, right-click the file and pick **Rename**. The words after `cover - ` are read out to people who can't see the photo. Photos straight from your phone are fine, the blog makes smaller copies by itself. The About page gets its photo the same way, in `pages/about`.
 
 ### Photos in the story
 
-Upload a photo into the post's folder and put it in the story with a `!`, its description in the square brackets and its name in the round ones:
+Drag a photo into the post's folder and put it in the story with a `!` (type `photo` and the editor writes it for you), its description in the square brackets and its name in the round ones:
 
 ```markdown title="posts/2025-06-01-my-first-trip/index.md"
 ![Lunch by the lake](./lunch.jpg)
@@ -89,7 +92,7 @@ The photos at the end of a post, in a grid that opens full screen when clicked, 
 1. On your computer, make a folder called `gallery` and put the photos in it.
 2. Name each photo after what's in it, like `The view from the top.jpg`. The name is shown under the photo, and read out to people who can't see it.
 3. To put them in order, start the names with a number and ` - `: `01 - The view from the top.jpg`, `02 - Lunch by the lake.jpg`. Photos without a number come last.
-4. Open your post's folder on GitHub, click **Add file** → **Upload files**, drag in the whole `gallery` folder and commit.
+4. Drag the whole `gallery` folder from your computer onto your post's folder in the editor's file list.
 
 A photo's name can't have a `?` or `#` in it.
 
@@ -103,13 +106,13 @@ Like on [Bella's trip to the alp](../2025-06-01-up-to-the-alp/index.md).
 
 ### Not finished yet?
 
-Add `published: false` under the title, and the post stays off the site until you remove that line.
+A new post starts with **Published** switched off in the form (`published: false`): you see it in the preview, but it stays off your blog until you switch it on. That works for any post, to take it offline for a while.
 
-[Bella's alp post](../2025-06-01-up-to-the-alp/index.md) shows everything else a post can have, like the table of facts. Open its `index.md` on GitHub and copy whatever you need.
+[Bella's alp post](../2025-06-01-up-to-the-alp/index.md) shows everything else a post can have, like the table of facts. Open it in the editor and copy whatever you need.
 
 ## Checklists
 
-A list in your story can show a little badge in front of each line instead of a dot: a green plus for what went well, a red minus for what didn't, a question mark, a star. Write the symbol in square brackets after the `-`:
+A list in your story can show a little badge in front of each line instead of a dot: a green plus for what went well, a red minus for what didn't, a question mark, a star. Write the symbol in square brackets after the `-`, or type `good`, `bad`, `question` or `star` and let the editor write it:
 
 ```markdown title="posts/2025-06-01-my-first-trip/index.md"
 ## What I learned
@@ -136,7 +139,7 @@ A bold first line works as the heading of the point, and the next line, starting
 
 ## Maps
 
-Recorded your route with a watch or an app like Strava or Komoot? Most of them can save it as a **GPX file**. Name it `route.gpx` and upload it into the post's folder, the same way as the photos. There's nothing to write: your route appears on the map (OpenStreetMap, anywhere in the world) after the story, above the photo gallery. A trip of several days can have a route a day, numbered like the photos: `01 - route.gpx`, `02 - route.gpx`, and so on. Each gets its own colour on the map and on the altitude profile, and a click on a day's stretch of the profile zooms in on it. The button at its top right opens it big, the **3D** button under its zoom tilts it over the mountains, and the facts at the top get a link to download each file. If the file has altitudes (most do), an **altitude profile** runs along the bottom of the map: point at it to see how far you are from the start and the end, how much you've climbed and how much is still to come, while a little walker shows the spot on the map. Press ▶ and the walker walks the whole route. The **Altitude** switch hides it.
+Recorded your route with a watch or an app like Strava or Komoot? Most of them can save it as a **GPX file**. Name it `route.gpx` and drag it into the post's folder, the same way as the photos. There's nothing to write: your route appears on the map (OpenStreetMap, anywhere in the world) after the story, above the photo gallery. A trip of several days can have a route a day, numbered like the photos: `01 - route.gpx`, `02 - route.gpx`, and so on. Each gets its own colour on the map and on the altitude profile, and a click on a day's stretch of the profile zooms in on it. The button at its top right opens it big, the **3D** button under its zoom tilts it over the mountains, and the facts at the top get a link to download each file. If the file has altitudes (most do), an **altitude profile** runs along the bottom of the map: point at it to see how far you are from the start and the end, how much you've climbed and how much is still to come, while a little walker shows the spot on the map. Press ▶ and the walker walks the whole route. The **Altitude** switch hides it.
 
 ```
 posts/2025-06-01-my-first-trip/index.md
@@ -147,7 +150,7 @@ Bella's post has one, have a look at [Up to the alp for the summer](../2025-06-0
 
 ### Places on the map
 
-The `points` of a post's `facts:` (see [Filters](#filters)) get a dot on the route's map when you give them a `latitude` and `longitude`. Hover a dot and it shows the point's name and altitude:
+The `points` of a post's `facts:` (see [Filters](#filters)) get a dot on the route's map when you give them a `latitude` and `longitude`. In the form they're under **The facts** → **Places on the way**. Hover a dot and it shows the point's name and altitude:
 
 ```yaml title="posts/2025-06-01-my-first-trip/index.md"
 facts:
@@ -164,11 +167,11 @@ To find them, right-click the place on [Google Maps](https://maps.google.com): t
 
 There's nothing to write for these. Phones and many cameras save where a photo was taken inside the photo itself (its GPS, in the EXIF). Every photo in the post's `gallery` folder that has it appears on the route's map as a small photo on a pin, the pin's tip where it was taken, and a click on it opens it full screen. The other way round, a photo opened full screen has **Show on the map**.
 
-Your photos don't show up on the map? The GPS was taken out on the way: some apps remove it when they export or resize a photo (Apple Photos: in the export, turn on **Include location information**). The photos on your blog never have it, only the ones you upload: the blog makes its own copies of them without it. Mind that the ones you upload are in your blog's repository, which anyone can see.
+Your photos don't show up on the map? The GPS was taken out on the way: some apps remove it when they export or resize a photo (Apple Photos: in the export, turn on **Include location information**). The photos on your blog never have it, only the ones you put in: the blog makes its own copies of them without it. Mind that the ones you put in are in your blog's repository, which anyone can see.
 
 ### Another map in the story
 
-Want a second route somewhere in the story, say the way to the hut the day before? Upload it with any other name and put it in the text like a photo, with a `!` in front:
+Want a second route somewhere in the story, say the way to the hut the day before? Drag it into the post's folder with any other name and put it in the text like a photo (type `map`), with a `!` in front:
 
 ```markdown title="posts/2025-06-01-my-first-trip/index.md"
 ![The way to the hut](./hut.gpx)
@@ -180,7 +183,7 @@ It's a map right there, with its download link, but only of its own route: the p
 
 Tags are short words you give your posts, like `hiking` or `winter`. They're listed in the sidebar, and clicking one shows only the posts that have it. Click two, and you get the posts that have both.
 
-Write a tag in lower case, with `-` instead of spaces: `trail-running`. The sidebar shows it as **Trail Running**. To show it differently, give it a name in `languages/en.yaml`:
+In the form, pick a post's tags from the list of the ones you have, or type a new one and click **+**. To rename a tag in all your posts at once, or merge two, open **FM** → **Taxonomies**. Write a tag in lower case, with `-` instead of spaces: `trail-running`. The sidebar shows it as **Trail Running**. To show it differently, give it a name in `languages/en.yaml`:
 
 ```yaml title="languages/en.yaml"
 tags:
@@ -212,7 +215,7 @@ tags:
 
 ## Filters
 
-Under the tags are the **filters**: Rating, Altitude gain, Distance, Time and Gradient. You don't write these yourself. They come from the numbers you give a post under `facts:`, which also appear as a table at the start of the post:
+Under the tags are the **filters**: Rating, Altitude gain, Distance, Time and Gradient. You don't write these yourself. They come from the numbers you give a post under `facts:` (**The facts** in the form), which also appear as a table at the start of the post:
 
 ```yaml title="posts/2025-06-01-my-first-trip/index.md"
 facts:

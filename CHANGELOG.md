@@ -1,5 +1,21 @@
 # Changelog
 
+## v0.3.0 - 2026-11-26
+
+- Your blog's editor in the browser, on GitHub Codespaces: one link, and
+  the editor opens with your blog running in a tab next to it. Nothing to
+  install, and no commits: it saves as you type and puts your changes
+  online a couple of minutes later (GitDoc). The first save makes your
+  own copy of the blog on GitHub.
+- Posts as cards, and a form for what's between the `---` lines: title,
+  date, Published, tags to pick from, featured and the facts, each with a
+  line on what it's for (Front Matter CMS). A new post starts as a draft,
+  with a few hints. Rename or merge a tag in all posts at once.
+- Buttons for bold, italic, headings, links and photos, and snippets:
+  type `photo`, `map`, `link`, `good` or `bad` and pick it from the list.
+- The README and the how-tos start from the editor's link; the steps on
+  the GitHub website are gone. Bella's posts say `published: true`.
+
 ## v0.2.16 - 2026-11-26
 
 - cowtent-core v0.15.1, whose checks pass on this blog again.
